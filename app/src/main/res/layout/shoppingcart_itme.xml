@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/shoppingcart_itme_ll"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/shoppingcart_itme_goods_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shoppingcart_itme_name_merchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name_Merchant"
+                    android:textSize="17dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/shoppingcart_itme_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number"
+                    android:textColor="@color/tomato"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/shoppingcart_itme_addtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addtiem"
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/shoppingcart_itme_confirm_buy"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:text="下单"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/shoppingcart_itme_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/shoppingcart_delete_image"
+            android:layout_toLeftOf="@id/shoppingcart_itme_confirm_buy"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

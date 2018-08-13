@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:contentInsetStart="0dp"
+        android:background="@color/gray">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+            <ImageButton
+                android:id="@+id/goodsdao_return_button"
+                style="@style/ToolbarReturnButton"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                style="@style/ToolbarTextView"
+                android:text="设置商品"
+                android:layout_toRightOf="@id/goodsdao_return_button"
+                android:layout_alignTop="@id/goodsdao_return_button"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:id="@+id/rv_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/darkgray"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/rv_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lightgray"
+            android:orientation="vertical"
+            android:backgroundTint="@color/lightgray">
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/settrade_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/upload_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settrade_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="商品名:"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/settrade_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入商品名"
+                android:padding="10dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settrade_merchant_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="    源头:"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/settrade_merchant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入商品源头(如:商店的名字)"
+                android:padding="10dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settrade_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="    简历:"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/settrade_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入简介"
+                android:padding="10dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settrade_sellingprice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="    价格:"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/settrade_sellingprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入商品价格"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:inputType="number|numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/settrade_distributionprice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="配送价:"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/settrade_distributionprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入配送价格"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:inputType="number|numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/settrade_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="    类型:"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/settrade_type"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="请选择商品类型"
+                android:padding="10dp"
+                android:background="@color/white" />
+
+            <ImageButton
+                android:id="@+id/settrade_type_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/goods_type_button"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goodsdao_confirmbutton"
+            android:layout_marginTop="15dp"
+            style="@style/ConfirmButton"
+            android:background="@drawable/confirm_button"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:background="@drawable/showgoods_ll">
+
+        <ImageView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/showgoods_image" />
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ScrollView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/showgoods_tradename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="TradeName"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/showgoods_username_merchant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dimgray"
+                        android:textSize="14dp"
+                        android:text="Username + Merchant"/>
+
+                    <TextView
+                        android:id="@+id/showgoods_volume_fabulous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume + Fabulous"
+                        android:textSize="11dp"
+                            />
+
+                    <TextView
+                        android:id="@+id/showgoods_content_addtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:text="Content + AddTime"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/showgoods_sellingprice_distributionprice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Selling_Price + Distribution_Price"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/showgoods_add_shoppingcart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/showgoods_add_shoppingcart_button"
+                        android:layout_alignParentRight="true"/>
+
+                    <TextView
+                        android:id="@+id/showgoods_add_shoppingcart_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/showgoods_add_shoppingcart"
+                        android:layout_centerVertical="true"
+                        android:text="number"/>
+
+                    <ImageView
+                        android:id="@+id/showgoods_reduce_shoppingcart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/showgoods_reduce_shopping_button"
+                        android:layout_toLeftOf="@id/showgoods_add_shoppingcart_number"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/showgoods_confirmbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/showgoods_returnbutton"/>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trade_ll"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/trade_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="2dp"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/trade_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TradeName"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/trade_merchant_fabulous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TradeMerchant   Fabulous"
+            android:textSize="10dp"/>
+        <TextView
+            android:id="@+id/trade_sellingprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TradeSellingPrice"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:gravity="right"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/trade_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/trade_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/trade_update"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/trade_update_image"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/trade_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/trade_delete_image"
+            android:layout_toRightOf="@id/trade_update"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
